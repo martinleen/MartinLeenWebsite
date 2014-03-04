@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Martin Leen Contact</title>
+	<meta name="description" content="Web and User Interface Design Assignment">
+	<meta name="author" content="Martin Leen C10724413">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css\base.css">
+	<link rel="stylesheet" href="css\skeleton.css">
+	<link rel="stylesheet" href="css\layout.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jQuery.Validate/1.6/jQuery.Validate.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("#theForm").validate();
+      });
+    </script>
+
+</head>
+<body>
+<div class="container">
+		<div class="two columns">
+			<h1>ML</h1>
+		</div>
+		
+		<div id="nav" class="twelve columns">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Biog.html">Biog/CV</a></li>
+				<li><a href="CultureAndCriticism.html">Culture and Critism</a></li>
+				<li><a href="Blog.html">Blog</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="sixteen columns"><a href="index.hthml">Home</a>|Contact</div>
+		
+		<div id="headerImage" class="sixteen columns">
+			<img src="images\header2.jpg" alt="">
+		</div>
+		
+		<div id="formText" class="sixteen columns">
+		Please feel free to get in touch with me by filling out the form below
+		</div>
+		<div id="fName" class="eight columns">
+		<form id="theForm"
+		me_email
+		me_page="contact.html"
+		me_subject="Contact page submission">
+		First Name:<input class="required" name="firstName" type="text" id="firstName"/>
+		</div>
+		<div id="lName" class="eight columns">
+		Last Name:<input class="required" name="lastName" type="text" id="lastName"/>
+		</div>
+		<div id="subEmail" class="sixteen columns">
+		E-Mail:<input class="required email" name="email" type="text" id="email"/>
+		</div>
+		<div id="comBox" class="thirteen columns">
+		Comment<br>
+		<textarea cols="50" rows="20"  name="comment">
+		</textarea>
+		</div>
+		<div id="buttons" class="sixteen columns">
+		<input class="button" type="submit" value="SEND CONTACT FORM" />
+		<input type="reset" value="Reset"/>
+		</div>
+		</form>
+		<div id="footer" class="sixteen columns">
+		<em>Copyright 2013 Martin Leen DT265</em>&nbsp designed using Skeleton <a href="http://www.getskeleton.com/">http://www.getskeleton.com</a>
+		<a href="martin@leen.com">martin@leen.com</a>
+		</div>
+	</div>
+	<script>
+	
+	</script>
+</body>
+</html>
+
+

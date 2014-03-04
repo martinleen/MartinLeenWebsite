@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<meta charset="utf-8">
+	<title>Martin Leen  Homepage</title>
+	<meta name="description" content="Web and User Interface Design Assignment">
+	<meta name="author" content="Martin Leen C10724413">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css\base.css">
+	<link rel="stylesheet" href="css\skeleton.css">
+	<link rel="stylesheet" href="css\layout.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
+	<!--Java Script for password-->
+	<script>
+     function load() {
+	 var password
+	var pass1="1000-5999";
+	password=prompt('Please enter password to view page');
+	if (password==pass1)
+	$('body').show();
+	else 
+	password=prompt('Incorrect password try again')
+	if(password==pass1)
+	$('body').show();
+	else 
+	password=prompt('Last Try');
+	if (password==pass1)
+	$('body').show();
+	else 
+	window.location="www.google.com";
+		}
+     window.onload = load;
+    </script>
+ </head>
+
+<body style="display: none;"><!--until password is entered-->
+
+<div class="container">
+		<div class="two columns">
+			<h1>ML</h1>
+		</div>
+		
+		<div id="nav" class="twelve columns">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Biog.html">Biog/CV</a></li>
+				<li><a href="CultureAndCriticism.html">Culture and Criticism</a></li>
+				<li><a href="Blog.html">Blog</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+				</ul>
+		</div>
+		<div class="sixteen columns"><a href="index.hthml">Home</a></div><!--breadcrumb nav-->
+		
+		
+		<div id="headerImage" class="sixteen columns">
+			<img src="images\dog.jpg" alt="header_image">
+		</div>
+		
+		<div id="bodyText" class="sixteen columns">
+			<h1>Martin Leen</h1>
+			<p>I'm currently undertaking a higher diploma in computing at Dublin Institute of Technology. 
+			During the course of my career I have worked all over the world in a number of different jobs. 
+			I am qualified in electronics and also hold a degree in creative arts.
+			I have written on culture, been involved in creating and running arts festivals. 
+			Having a background in both creative arts and technical allows me to bring a unique and creative skill set to your organisation.
+			</p>
+		</div>
+		
+		<div class="one-third column feature">
+			
+			<h2>Biography</h2>
+			<a href="Biog.html"><img src="images\Boats.jpg" alt="go_to_cv"></a>
+			<p>I hold degrees in both electronics and creative & cultural industries. I have worked all over the world in a number of challenging and rewarding positions.
+			Please click the link above to view my CV.
+			</p>
+		</div>
+		
+		<div class="one-third column feature">
+			
+			<h2>Culture Studies</h2>
+			<a href="CultureAndCriticism.html"><img src="images\sadhu.jpg" alt="culture_studies"></a>
+			<p>Working and travelling abroad has given me a unique perspective on both our own culture and other cultures. I have written extensively on visual culture. 
+			Please click the link above to see some of the articles I have written</p>
+		</div>
+		
+		<div class="one-third column feature">
+			
+			<h2>Blog</h2>
+			<a href="Blog.html"><img src="images\Flowers.jpg" alt="blog"></a>
+			<p>This is a link to my blog on various aspects of web and user interface design</p>
+		</div>
+		
+		<div id="footer" class="sixteen columns">
+		<em>Copyright 2013 Martin Leen DT265</em>&nbsp designed using Skeleton <a href="http://www.getskeleton.com/">http://www.getskeleton.com</a>
+		<a href="martin@leen.com">martin@leen.com</a>
+		</div>
+		
+
+	</div><!-- container -->
+	<!-- End Document
+================================================== -->
+</body>
+</html>
